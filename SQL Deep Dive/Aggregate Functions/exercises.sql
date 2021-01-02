@@ -34,11 +34,12 @@
 
 -- Question 1: How many official languages are there? A: 102
 -- Table: countrylanguage
+select count(DISTINCT "language") from countrylanguage where isofficial = true;
 
 -- Question 2: What is the average life expectancy in the world? A: 66.48603611164265
 -- Table: country
 
--- Question 3: What is the average population for cities in the netherlands? A: 15864000.000000000000
+-- Question 3: What is the average population for cities in the netherlands? A: 185001
 -- Table: city
 
 
