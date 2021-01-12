@@ -19,7 +19,7 @@ AND (country = 'Japan' OR country = 'Australia');
 * Question: 
 * What was our total sales in June of 2004 for orders over 100 dollars? A: 205226.06
 */
-SELECt sum(totalamount)
+SELECT sum(totalamount)
 FROM orders
 WHERE totalamount > 100
 AND (orderdate >= '2004-06-01' AND orderdate <= '2004-06-30')
